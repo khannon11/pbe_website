@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Phi Beta Epsilon</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <link rel="stylesheet" type="text/css" href="css/fonts.css" />
+  <script type="text/javascript" src="javascript/jquery-latest.js"></script>
+  <script type="text/javascript" src="javascript/javascript.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="menu">
+    <div style="opacity:1">
+      <p class="pbe_name">Phi &nbsp; Beta &nbsp; Epsilon</p>
+      <div class="logo">
+        <img src="images/PBE_Crest_Full_Color_250.png" />
+      </div>
+      <div class="option" id="home" onClick="select_page(this);">
+        <!--Image first here, because they're float right, super hacky-->
+        <div class="selected">
+          <img class="select_icon" src="images/selected.png"/>
+        </div>
+        <div class="choice">
+          HOME
+        </div>
+      </div>
+      <div class="option" id="news" onClick="select_page(this);">
+        <div class="selected">
+          <img class="hide_me select_icon" src="images/selected.png"/>
+        </div>
+        <div class="choice">
+          NEWS
+        </div>
+      </div>
+      <div class="option" id="rush" onClick="select_page(this);">
+        <div class="selected">
+          <img class="hide_me select_icon" src="images/selected.png"/>
+        </div>
+        <div class="choice">
+          RUSH
+        </div>
+      </div>
+      <div class="option" id="house" onClick="select_page(this);">
+        <div class="selected">
+          <img class="hide_me select_icon" src="images/selected.png"/>
+        </div>
+        <div class="choice">
+          HOUSE
+        </div>
+      </div>
+      <div class="option" id="history" onClick="select_page(this);">
+        <div class="selected">
+          <img class="hide_me select_icon" src="images/selected.png"/>
+        </div>
+        <div class="choice">
+          HISTORY
+        </div>
+      </div>
+      <div class="option" id="brothers" onClick="select_page(this);">
+        <div class="selected">
+          <img class="hide_me select_icon" src="images/selected.png"/>
+        </div>
+        <div class="choice"id="brothers">
+          BROTHERS
+        </div>
+      </div>
+	  <div class="option" id="nme" onClick="select_page(this);">
+        <div class="selected">
+          <img class="hide_me select_icon" src="images/selected.png"/>
+        </div>
+        <div class="choice"id="nme">
+          NME
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="content">
+      <div class="header" id="header">
+        HOME
+      </div>
+      <iframe id="main_content" src="content/home.html"></iframe>
+    </div>
+  </div>
+</body>

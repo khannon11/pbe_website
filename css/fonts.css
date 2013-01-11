@@ -1,0 +1,9 @@
+@font-face {
+  font-family: bebas;
+  src: url('../fonts/bebas.ttf'), url('../fonts/bebas.eot');
+}
+
+@font-face {
+  font-family: nevis;
+  src: url('../fonts/nevis.ttf'), url('../fonts/nevis.eot');
+}

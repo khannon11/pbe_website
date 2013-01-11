@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html style="width: 95%; padding-left: 10px;">
+<head>
+  <link rel="stylesheet" type="text/css" href="../css/sub_page.css" />
+  <script type="text/javascript"> 
+    var timeDelay = 5; // change delay time in seconds
+    var a = new Array("../images/afterhours.jpg","../images/dining.jpg", "../images/oldhouse.jpg", "../images/paintball.jpg", "../images/roofdeck.jpg", "../images/social.jpg", "../images/spiker.jpg");
+    var howMany = a.length;
+    timeDelay *= 500;
+    var c = 0;
+    var cur = new Image();
+    cur.src = a[c];
+    function start() {
+      setInterval("slideshow()", timeDelay);
+    }
+    function slideshow() {
+      c++;
+      if (c == howMany) {
+        c = 0;
+      }
+      document["pictures"].src = a[c];
+    }
+  </script>
+</head>
+<body onload="start()">
+  <p><b>Phi Beta Epsilon</b> fraternity is one of MIT's oldest fraternities and has  served as a home away from home for men of the Massachusetts Institute  of Technology for over 100 years.</b></p>
+<div id="pictures" style="text-align:center;">
+ <img border="0" src="../images/afterhours.jpg" height="250" width="380" name="pictures" /> 
+ </div>
+<p>With a dedication to enriching the  academic, cultural, and social pursuits of its members, PBE shapes the lives of its actives and enjoys the continued support of hundreds of alumni.  The current brotherhood comes from a wide range of geographic and cultural backgrounds and is engaged in numerous majors, sports, music and cultural groups, and other extracurricular activities.  Welcome to Phi Beta Epsilon. </p>
+</body>

@@ -1,0 +1,107 @@
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+  font-family: bebas, calibri;
+  color: #ffffff;
+  font-size: 60px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+html {
+  height: 90%;
+  width: 100%;
+}
+
+.container {
+  overflow: hidden;
+  background-image: url('../images/background-pic_scaled.jpeg');
+  height: 90%;
+ /*width: 802px;*/
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  height: 200px;
+  width: 185px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -10%;
+}
+
+.selected {
+  float: right;
+  margin-right: 10px;
+  height: 10px;
+}
+
+.hide_me {
+  visibility: hidden;
+}
+
+.option {
+  overflow: hidden;
+  /*height: 16x; */
+  height: 18%;
+  font-size: 50%;
+  cursor: pointer;
+  margin-top: 0px;
+}
+
+.pbe_name {
+  text-align: center;
+  position: relative;
+  top: 10px;
+  font-size: 60%;
+}
+
+.choice {
+  float: right;
+  margin-right: 5px;
+}
+
+.content {
+  height: 100%;
+  width: 55%;
+  float: right;
+  margin-right: 10%;
+}
+
+.header {
+  margin-top: 5%;
+  height: 10%;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: middle;
+  font-size: 100%;
+  text-align: center;
+}  
+
+iframe {
+  background-color: rgba(0, 0, 0, .8);
+  margin-top: 5%;
+  width: 100%;
+  border: 0px;
+  height: 70%;
+  overflow-x: hidden; 
+  overflow-y: scroll; 
+}
+
+.menu {
+  background-color: rgba(51, 161, 201, .5);
+  position: relative;
+  top: 0px;
+  /*left: 40px; */
+  float: left;
+  left: 3%;
+ /* height: 402px;*/
+  height: 100%;
+  /*width: 130px;*/
+  width: 23%;
+  vertical-align: middle;
+}

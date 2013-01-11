@@ -1,0 +1,77 @@
+body {
+  width: 100%;
+  height: 100%;
+  font-family: nevis, calibri;
+  color: #ffffff;
+}
+
+a:link {color: #000000; text-decoration: underline; }
+a:active {color: #ffff00; text-decoration: underline; }
+a:visited {color: #000000; text-decoration: underline; }
+a:hover {color: #ffff00; text-decoration: underline; }
+
+
+.post {
+  
+  background-color: rgba(51, 161, 201, .5);
+  margin-bottom: 10px;
+}
+
+.news_headline {
+  padding-top: 5px;
+  padding-left: 10px;
+  font-size: 24px;
+}
+
+.news_content {
+  font-size: 14px;
+  margin-left: 20px;
+  padding-bottom: 5px;
+  padding-right: 5px;
+}
+
+.brother_thumbnail {
+  width:50px;
+  height: 70px;
+  float: left;
+}
+
+.brother_pic {
+	float: left; 
+	height: 250px;
+	width: 150px;
+
+}
+
+.brother_link {
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+}
+
+td.brothers_table {
+  width: 30%;
+  height: 100%;
+  padding-bottom: 5%;
+}
+
+.brother_summary_name {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.brother_summary {
+  /*height: 70px;
+  width: 150px;*/
+/*  height: 30%;
+  width: 50%;*/
+  cursor: pointer;
+  color: #d9d4d6;
+  /*border-style: solid;
+  border-width: 1px;*/
+  margin-bottom: 10%;
+}
+
+.brother_info {
+  margin-left: 55px;
+}
