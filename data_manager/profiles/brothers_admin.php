@@ -25,6 +25,15 @@ $fields = array (
         , 'link' => '/pbe/brothers/edit/*'
     )
     , array (
+        'name' => 'brotherPosition'
+        , 'type' => 'lookup'
+        , 'title' => 'Brother Position'
+		//lookup field specific parameters
+		, 'lookup_table' => 'position'
+		, 'key_field' => 'textDescription'
+		, 'values_field' => 'title'
+    )
+    , array (
         'name' => 'brotherMajor'
         , 'type' => 'input'
         , 'title' => 'Major'

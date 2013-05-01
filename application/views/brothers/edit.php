@@ -1,20 +1,28 @@
-<p>
-	<?php	echo anchor($controller.'/list_all', 'Back to list'); ?>
-</p>
 
 <form action="<?php echo base_url().$controller; ?>/save" method="post">
 
-<table border="1">
-<?php foreach($titles as $key => $title) { ?>
-	<tr>
-		<td><?php echo $title; ?></td>
-		<td><?php echo $fields[$key]; ?></td>
-	</tr>
-<?php } ?>
-</table>
+		<article class="module width_3_quarter">
 
-<p>
-	<input type="submit" value="Save">
-</p>
+			<header><h3>Brother Information</h3></header>
+				<div class="module_content">
+					<?php foreach($titles as $key => $title) { ?>
+						<fieldset>
+							<label><?php echo $title; ?></label>
+							<span><?php echo $fields[$key]; ?></span>
+						</fieldset>
+									<?php } ?>
+
+						<div class="clear"></div>
+				</div>
+			<footer>
+				<div class="submit_link">
+					<input type="submit" value="Save">
+				</div>
+			</footer>
+		</article><!-- end of post new article -->
 
 </form>
+
+
+
+

@@ -7,6 +7,7 @@
         </div>
         <?php echo $this->assets->load("/pbe_crest.png","public",array("border"=>"0","class"=>"center"));?>
         <br />
+<!--
 <form class="form-1">
     <p class="field">
         <input type="text" name="login" placeholder="Username or email">
@@ -20,6 +21,7 @@
         <button type="submit"  name="submit">Login</button>
     </p>
 </form>
+-->
 
 
   </div>

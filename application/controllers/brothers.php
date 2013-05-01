@@ -26,7 +26,8 @@ class Brothers extends CI_Controller {
 		$data['controller'] = $this->controller;
 
 		$data['page'] = $this->controller.'/edit';
-
+	  	$this->load->library("assets");
+	  	
 		$this->load->view('main_tpl', $data);
 	}
 	
@@ -61,7 +62,7 @@ class Brothers extends CI_Controller {
 		$data['controller'] = $this->controller;
 		
 		$data['page'] = $this->controller.'/edit';
-		
+	  	$this->load->library("assets");
 		$this->load->view('main_tpl', $data);
 	}
 	
@@ -69,10 +70,10 @@ class Brothers extends CI_Controller {
 		$this->list_all();
 	}
 	
-	function list_all() {
+	function list_all() {	
 		$page = (int) $this->uri->segment(3, 1);
 		$page = ($page?$page:1);
-		$items_per_page = 11;
+		$items_per_page = 5;
 		
 		$dm = new DataManager($this->dm_profile);
 		$dm->setItemsPerPage($items_per_page);
@@ -103,7 +104,8 @@ class Brothers extends CI_Controller {
 		$data['controller'] = $this->controller;
 		
 		$data['page'] = $this->controller.'/list';
-		
+	  	$this->load->library("assets");	  	
+	  	
 		$this->load->view('main_tpl', $data);
 	}
 	
