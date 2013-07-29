@@ -120,8 +120,18 @@ $this->load->view($page);
 						foreach ($query->result() as $row){	echo '<a href="mailto:'.$row->brotherEmail.'@MIT.EDU">'.$row->brotherName.'</a>';}
 					?>
 					</p></div>
-					<div class="message"><p><strong>VC</strong>: ?</p></div>
-					<div class="message"><p><strong>PC</strong>: Rishi</p></div>
+					<div class="message"><p><strong>VC</strong>: 
+					<?php
+						$query = $this->db->query("SELECT brotherName,brotherEmail FROM brothers WHERE brotherPosition='VC'");
+						foreach ($query->result() as $row){	echo '<a href="mailto:'.$row->brotherEmail.'@MIT.EDU">'.$row->brotherName.'</a>';}
+					?>
+					</p></div>
+					<div class="message"><p><strong>PC</strong>: 
+					<?php
+						$query = $this->db->query("SELECT brotherName,brotherEmail FROM brothers WHERE brotherPosition='PC'");
+						foreach ($query->result() as $row){	echo '<a href="mailto:'.$row->brotherEmail.'@MIT.EDU">'.$row->brotherName.'</a>';}
+					?>
+					</p></div>
 					<div class="message"><p><strong>&empty;</strong>: 
 					<?php
 

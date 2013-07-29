@@ -12,15 +12,30 @@ function show_field($variable, $text){
 	}
 }
 
-
 	if ($name == NULL){
+	
+			echo '<div class="brothersListWrapper"><div class="brotherList"><ul>';
 
 			foreach($results as $row){
 				$linkName = str_replace(" ", "_", $row->brotherName);
+			
+			    /*
+echo "<li>";
+			    echo '<a href="' . base_url().'website/brothers/'.$linkName . '">';
+			    echo '<div class="brotherPictureWrapper">';
+			    echo '<img src="http://placehold.it/90x90" class="brotherPicture" />';
+			    echo '</div>';
+				echo '<p class="brotherName">' . $row->brotherName . '</p>';
+				echo '</a></li>';
+*/
+
+
 
 				echo "<a href='".base_url()."website/brothers/".$linkName."'>" . $row->brotherName . "</a>";
 				echo "<br />";
 				}
+				
+			echo '</ul>\n</div></div>\n';
 		}
 
 	else {

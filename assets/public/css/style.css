@@ -231,3 +231,64 @@ img.center { display: block; margin-left: auto; margin-right: auto; }
   padding-bottom: 5px;
   padding-right: 5px;
 }
+
+
+/* BROTHER PAGE START */
+.brothersPledgeYear {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+div.brothersListWrapper {
+  clear:both;
+  margin: 20px 0;
+}
+
+div.brothersList {
+  padding: 10px;
+  font-size: 15px;
+}
+
+div.brothersList a {
+    display:block;
+    text-decoration: none;
+    text-align:center;
+    color: black;
+    padding:.3em;
+}
+
+div.brothersList a:hover p.brotherName {
+   color: #962C21;
+}
+
+div.brothersList ul {
+    list-style-type:none;
+}
+
+div.brothersList li {
+    list-style:none;
+    float:left;
+    margin: .3em;
+    width:12em;
+    height:15em;
+}
+
+div.brothersList p.brotherName {
+    margin-top:auto;
+    margin-bottom:auto;
+}
+
+img.brotherPicture {
+    max-width:7em;
+}
+
+div.brotherPictureWrapper {
+    padding:.3em;
+    clear:both;
+    margin-right:auto;
+    margin-left:auto;
+    width:7em;
+    height:7em;
+    overflow:hidden;
+}
+/* BROTHER PAGE END */
