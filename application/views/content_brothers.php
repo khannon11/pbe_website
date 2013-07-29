@@ -35,7 +35,7 @@ echo "<li>";
 				echo "<br />";
 				}
 				
-			echo '</ul>\n</div></div>\n';
+			echo '</ul></div></div>';
 		}
 
 	else {
